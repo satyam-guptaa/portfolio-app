@@ -6,6 +6,38 @@
 	-webkit-text-size-adjust: 100%;
 }
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 10px;
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: $appBlack;
+	}
+	::-webkit-scrollbar-thumb {
+		background: $appGrey;
+		border-radius: 1rem;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: $appGrey;
+	}
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+
+	@include ipad {
+		font-size: 7.5px;
+	}
+
+	@include mobile {
+		font-size: 7px;
+	}
+}
+
 body {
 	margin: 0;
 	min-width: 320px;
@@ -13,17 +45,23 @@ body {
 	font-family: 'Space Grotesk', sans-serif;
 	background-color: $appBlack;
 	color: $appWhite;
+	overflow-x: hidden;
 }
 
 input {
 	background: none;
 	border: none;
+	font-family: inherit;
 	outline: none;
+	color: inherit;
 }
 
 button {
 	border: none;
+	padding: 0;
+	font-family: inherit;
 	background: none;
+	color: inherit;
 	outline: none;
 	cursor: pointer;
 }

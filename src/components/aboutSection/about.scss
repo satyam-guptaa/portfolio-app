@@ -1,0 +1,165 @@
+@import '../../stylesheet/main.scss';
+
+.about {
+	margin-bottom: 7rem;
+
+	&-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include mobile {
+			max-width: 30rem;
+			margin: 0 auto;
+			flex-direction: column;
+			justify-content: flex-start;
+			height: 60rem;
+			gap: 2rem;
+			background-image: url('/assets/images/image-profile-mobile.webp');
+			background-position: center;
+			background-size: cover;
+		}
+
+		h3 {
+			@include fontM;
+		}
+		&-links {
+			width: 25rem;
+			display: flex;
+			justify-content: space-between;
+		}
+		&-circle-img {
+			top: 30rem;
+			display: none;
+			right: 0;
+			transform: translateX(50%);
+			position: absolute;
+
+			@include mobile {
+				display: block;
+			}
+		}
+	}
+
+	&-body {
+		margin-top: 12rem;
+		@include mobile {
+			margin-top: 6rem;
+			text-align: center;
+		}
+
+		&-greet {
+			margin-bottom: 4rem;
+			max-width: 77rem;
+			@include ipad {
+				max-width: 60rem;
+			}
+
+			h1 {
+				@include fontXL;
+				@include mobile {
+					font-size: 6rem;
+				}
+				span {
+					border-bottom: 0.4rem solid $appGreen;
+				}
+			}
+		}
+
+		&-intro {
+			@include fontS;
+			color: $appGreyLG;
+			max-width: 50rem;
+			margin-bottom: 6.5rem;
+		}
+		&-contact-link {
+			@include fontS;
+			border-bottom: 0.2rem solid $appGreen;
+		}
+	}
+
+	&-profile-image-container {
+		width: 48rem;
+		height: 70rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+
+		@include mobile {
+			display: none;
+		}
+
+		.profile-img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		//this child will be position absolute to its parent not the parent's container
+		.circle-img {
+			position: absolute;
+			bottom: 5rem;
+			left: 0;
+			transform: translateX(-50%);
+			@include ipad {
+				right: 0;
+				left: 100%;
+			}
+		}
+	}
+
+	&-top-ring-img-container {
+		position: absolute;
+		top: 8rem;
+		left: -25rem;
+		z-index: -1;
+		@include mobile {
+			left: -55rem;
+			top: 15rem;
+		}
+	}
+
+	&-divider {
+		border: 0.1rem solid $appWhite;
+		margin-top: 18rem;
+		margin-bottom: 3rem;
+
+		@include mobile {
+			margin: 8rem 0;
+		}
+	}
+
+	&-skills {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 4rem;
+		@include mobile {
+			text-align: center;
+			display: block;
+
+			article {
+				margin-bottom: 4rem;
+			}
+		}
+		h3 {
+			@include fontL;
+			margin-bottom: 1.3rem;
+		}
+		p {
+			@include fontXS;
+			color: $appGreyLG;
+		}
+	}
+
+	&-bottom-ring-img-container {
+		position: absolute;
+		top: 95rem;
+		right: -25rem;
+		z-index: -1;
+
+		@include mobile {
+			top: 185rem;
+			right: -55rem;
+		}
+	}
+}

@@ -1,4 +1,4 @@
-export const FIRST_NAME = 'Satyam';
+export const PORTFOLIO_TEXT = 'Portfolio';
 export const FULL_NAME = 'Satyam Gupta';
 export const GREETING = `Nice to meet you!`;
 export const INTRO =

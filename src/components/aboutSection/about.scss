@@ -93,4 +93,11 @@
 			color: $appGreyLG;
 		}
 	}
+
+	&-bottom-ring-img-container {
+		position: absolute;
+		top: 60rem;
+		right: -15rem;
+		z-index: -1;
+	}
 }

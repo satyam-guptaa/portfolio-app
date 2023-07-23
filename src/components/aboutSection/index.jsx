@@ -53,6 +53,9 @@ const About = () => {
 			</div>
 			<div className='about-divider'></div>
 			<Skills />
+			<div className='about-bottom-ring-img-container'>
+				<img src='/assets/images/pattern-rings.svg' alt='rings' />
+			</div>
 		</section>
 	);
 };

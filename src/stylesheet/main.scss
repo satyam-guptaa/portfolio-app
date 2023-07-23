@@ -7,33 +7,73 @@ $appWhite: #fff;
 
 //typography
 @mixin fontXL {
-	font-size: 5.5rem;
-	line-height: 5.6rem;
+	font-size: 8.8rem;
+	line-height: 8.8rem;
 	font-weight: 700;
 	letter-spacing: -0.25rem;
 }
 
 @mixin fontL {
-	font-size: 4rem;
+	font-size: 4.8rem;
 	font-weight: 700;
-	line-height: 4.1rem;
+	line-height: 4.9rem;
 	letter-spacing: -0.15rem;
 }
 
 @mixin fontM {
-	font-size: 3rem;
+	font-size: 3.2rem;
 	font-weight: 700;
-	line-height: 3.1rem;
+	line-height: 3.3rem;
 }
 
 @mixin fontS {
+	font-size: 2.4rem;
+	font-weight: 500;
+	line-height: 2.5rem;
+}
+
+@mixin fontXS {
 	font-size: 1.8rem;
 	font-weight: 500;
 	line-height: 1.9rem;
 }
 
-@mixin fontXS {
-	font-size: 1.4rem;
-	font-weight: 500;
-	line-height: 1rem;
+//media queries breakpoints
+
+$breakpoints: (
+	'xsmall': 0,
+	'mobile': 480px,
+	'ipad': 850px,
+	'large': 1200px,
+	'xlarge': 1400px,
+);
+
+@mixin xsmall {
+	@media (min-width: map-get($breakpoints, 'xsmall')) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: map-get($breakpoints, 'mobile')) {
+		@content;
+	}
+}
+
+@mixin ipad {
+	@media (max-width: map-get($breakpoints, 'ipad')) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media (min-width: map-get($breakpoints, 'large')) {
+		@content;
+	}
+}
+
+@mixin xlarge {
+	@media (min-width: map-get($breakpoints, 'xlarge')) {
+		@content;
+	}
 }

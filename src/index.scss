@@ -12,6 +12,7 @@
 }
 
 html {
+	font-size: 10px;
 	::-webkit-scrollbar {
 		width: 10px;
 	}
@@ -27,6 +28,14 @@ html {
 	}
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
+
+	@include ipad {
+		font-size: 7.5px;
+	}
+
+	@include mobile {
+		font-size: 7px;
+	}
 }
 
 body {
@@ -36,6 +45,7 @@ body {
 	font-family: 'Space Grotesk', sans-serif;
 	background-color: $appBlack;
 	color: $appWhite;
+	overflow-x: hidden;
 }
 
 input {

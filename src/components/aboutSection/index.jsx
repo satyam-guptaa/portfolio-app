@@ -23,13 +23,17 @@ const About = () => {
 					<img src='/assets/images/icon-linkedin.svg' alt='Lk' />
 					<img src='/assets/images/icon-twitter.svg' alt='tweeter' />
 				</div>
+				<img
+					src='/assets/images/pattern-circle.svg'
+					alt='circle'
+					className='about-head-circle-img'
+				/>
 			</article>
 			<article className='about-body'>
 				<div className='about-body-greet'>
-					<h1>{GREETING}</h1>
-					<p>
-						I'm <span>{FULL_NAME}.</span>
-					</p>
+					<h1>
+						{GREETING} I'm <span>{FULL_NAME}.</span>
+					</h1>
 				</div>
 				<p className='about-body-intro'>{INTRO}</p>
 				<button className='about-body-contact-link'>

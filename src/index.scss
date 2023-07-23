@@ -6,6 +6,29 @@
 	-webkit-text-size-adjust: 100%;
 }
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: $appBlack;
+	}
+	::-webkit-scrollbar-thumb {
+		background: $appGrey;
+		border-radius: 1rem;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: $appGrey;
+	}
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
 body {
 	margin: 0;
 	min-width: 320px;
@@ -18,12 +41,16 @@ body {
 input {
 	background: none;
 	border: none;
+	font-family: inherit;
 	outline: none;
+	color: inherit;
 }
 
 button {
 	border: none;
+	font-family: inherit;
 	background: none;
+	color: inherit;
 	outline: none;
 	cursor: pointer;
 }

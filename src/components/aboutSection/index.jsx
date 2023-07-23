@@ -4,16 +4,16 @@ import './about.scss';
 import {
 	CONTACT_ME_LINK,
 	GREETING,
-	FIRST_NAME,
 	FULL_NAME,
 	INTRO,
+	PORTFOLIO_TEXT,
 } from '../../utilities/appConstants';
 
 const About = () => {
 	return (
 		<section className='about'>
 			<article className='about-head'>
-				<h3>{FIRST_NAME}</h3>
+				<h3>{PORTFOLIO_TEXT}</h3>
 				<div className='about-head-links'>
 					<img src='/assets/images/icon-github.svg' alt='git' />
 					<img

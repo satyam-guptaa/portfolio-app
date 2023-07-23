@@ -19,17 +19,20 @@
 
 	&-body {
 		margin-top: 8rem;
+
 		&-greet {
-			width: 70rem;
-			@include fontXL;
+			width: 60rem;
 			margin-bottom: 4.5rem;
+			h1,
 			p {
-				text-wrap: nowrap;
+				@include fontXL;
 			}
+
 			span {
 				border-bottom: 0.4rem solid $appGreen;
 			}
 		}
+
 		&-intro {
 			@include fontS;
 			color: $appGreyLG;
@@ -41,9 +44,10 @@
 			border-bottom: 0.2rem solid $appGreen;
 		}
 	}
+
 	&-profile-image-container {
 		width: 35rem;
-		height: 51rem;
+		height: 48rem;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -62,10 +66,31 @@
 			transform: translateX(-50%);
 		}
 	}
+
 	&-top-ring-img-container {
 		position: absolute;
 		top: 8rem;
 		left: -10rem;
 		z-index: -1;
+	}
+
+	&-divider {
+		border: 0.1rem solid $appWhite;
+		margin-top: 10rem;
+		margin-bottom: 3rem;
+	}
+
+	&-skills {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 2rem;
+		h3 {
+			@include fontL;
+			margin-bottom: 1.3rem;
+		}
+		p {
+			@include fontXS;
+			color: $appGreyLG;
+		}
 	}
 }

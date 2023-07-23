@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from './Skills';
 import './about.scss';
 import {
 	CONTACT_ME_LINK,
@@ -6,7 +7,7 @@ import {
 	FIRST_NAME,
 	FULL_NAME,
 	INTRO,
-} from '../../constants';
+} from '../../utilities/appConstants';
 
 const About = () => {
 	return (
@@ -25,7 +26,7 @@ const About = () => {
 			</article>
 			<article className='about-body'>
 				<div className='about-body-greet'>
-					<p>{GREETING}</p>
+					<h1>{GREETING}</h1>
 					<p>
 						I'm <span>{FULL_NAME}.</span>
 					</p>
@@ -50,6 +51,8 @@ const About = () => {
 			<div className='about-top-ring-img-container'>
 				<img src='/assets/images/pattern-rings.svg' alt='rings' />
 			</div>
+			<div className='about-divider'></div>
+			<Skills />
 		</section>
 	);
 };

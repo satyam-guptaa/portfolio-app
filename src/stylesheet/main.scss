@@ -1,0 +1,27 @@
+//variables
+$appBlack: #151515;
+$appGreen: #4ee1a0;
+$appGrey: #242424;
+$appGreyLG: #d9d9d9;
+$appWhite: #fff;
+
+//typography
+@mixin fontXL {
+	font-size: 8.8rem;
+	line-height: 8.8rem;
+	font-weight: 700;
+	letter-spacing: -0.25rem;
+}
+
+@mixin fontL {
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: 5.6rem;
+	letter-spacing: -0.15rem;
+}
+
+@mixin fontM {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 3.2rem;
+}

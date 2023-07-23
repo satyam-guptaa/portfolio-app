@@ -1,0 +1,29 @@
+@import './stylesheet/main.scss';
+
+:root {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+	font-family: 'Space Grotesk', sans-serif;
+	background-color: $appBlack;
+	color: $appWhite;
+}
+
+input {
+	background: none;
+	border: none;
+	outline: none;
+}
+
+button {
+	border: none;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}

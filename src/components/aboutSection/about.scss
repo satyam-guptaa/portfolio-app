@@ -162,4 +162,11 @@
 			right: -55rem;
 		}
 	}
+
+	&-bottom-divider {
+		display: none;
+		@include mobile {
+			display: block;
+		}
+	}
 }

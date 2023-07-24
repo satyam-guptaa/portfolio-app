@@ -8,6 +8,7 @@ import {
 	INTRO,
 	PORTFOLIO_TEXT,
 } from '../../utilities/appConstants';
+import Button from '../common/button/Button';
 
 const About = () => {
 	return (
@@ -36,9 +37,7 @@ const About = () => {
 					</h1>
 				</div>
 				<p className='about-body-intro'>{INTRO}</p>
-				<button className='about-body-contact-link'>
-					{CONTACT_ME_LINK}
-				</button>
+				<Button text={CONTACT_ME_LINK} />
 			</article>
 			<div className='about-profile-image-container'>
 				<img
@@ -60,6 +59,7 @@ const About = () => {
 			<div className='about-bottom-ring-img-container'>
 				<img src='/assets/images/pattern-rings.svg' alt='rings' />
 			</div>
+			<div className='about-divider about-bottom-divider'></div>
 		</section>
 	);
 };

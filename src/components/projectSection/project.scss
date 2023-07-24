@@ -5,6 +5,12 @@
 	flex-wrap: wrap;
 	gap: 5rem;
 	margin-bottom: 10rem;
+	justify-content: center;
+
+	@include ipad {
+		column-gap: 3rem;
+		row-gap: 6rem;
+	}
 
 	h1 {
 		width: 100%;
@@ -16,7 +22,7 @@
 		@include fontS;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
-		text-transform: capitalize;
+		text-transform: uppercase;
 	}
 
 	&-stack {
@@ -30,6 +36,12 @@
 		height: 40rem;
 		position: relative;
 		border-radius: 1rem;
+		margin-bottom: 1rem;
+
+		@include ipad {
+			width: 44rem;
+			height: 30rem;
+		}
 
 		img {
 			width: 100%;
@@ -73,6 +85,9 @@
 		&:hover {
 			.projects-resources-container {
 				opacity: 1;
+				button {
+					display: block;
+				}
 			}
 		}
 	}
@@ -92,8 +107,24 @@
 		transition: opacity 0.2s ease-in-out;
 		border-radius: 1rem;
 
+		@include ipad {
+			display: none;
+		}
+
 		button {
+			display: none;
 			width: fit-content;
+		}
+	}
+
+	&-resources-container-small-devices {
+		margin-top: 2rem;
+		display: flex;
+		gap: 2rem;
+
+		button {
+			text-transform: uppercase;
+			@include fontXS;
 		}
 	}
 }

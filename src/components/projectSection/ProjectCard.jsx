@@ -44,6 +44,12 @@ const ProjectCard = ({ data }) => {
 					</span>
 				);
 			})}
+			{imgLoaded && (
+				<div className='projects-resources-container-small-devices'>
+					<Button text={VIEW_PROJECT_TEXT} />
+					<Button text={VIEW_CODE_TEXT} />
+				</div>
+			)}
 		</article>
 	);
 };

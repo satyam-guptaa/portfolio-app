@@ -20,14 +20,6 @@
 			background-size: cover;
 		}
 
-		h3 {
-			@include fontM;
-		}
-		&-links {
-			width: 25rem;
-			display: flex;
-			justify-content: space-between;
-		}
 		&-circle-img {
 			top: 30rem;
 			display: none;
@@ -51,14 +43,24 @@
 		&-greet {
 			margin-bottom: 4rem;
 			max-width: 77rem;
+
 			@include ipad {
+				max-width: 70%;
+			}
+
+			@include mobile {
 				max-width: 100%;
 			}
 
 			h1 {
 				@include fontXL;
+
+				@include ipad {
+					font-size: 7rem;
+				}
+
 				@include mobile {
-					font-size: 5.3rem;
+					font-size: 5.5rem;
 				}
 				span {
 					border-bottom: 0.4rem solid $appGreen;
@@ -68,13 +70,10 @@
 
 		&-intro {
 			@include fontS;
+			font-weight: normal;
 			color: $appGreyLG;
 			max-width: 50rem;
 			margin-bottom: 6.5rem;
-		}
-		&-contact-link {
-			@include fontS;
-			border-bottom: 0.2rem solid $appGreen;
 		}
 	}
 

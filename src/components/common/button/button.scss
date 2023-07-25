@@ -1,10 +1,15 @@
 @import '../../../stylesheet/main.scss';
 
 button {
-	@include fontS;
+	@include fontXS;
+	font-weight: 700;
+	border: none;
+	padding: 0;
+	letter-spacing: 0.22rem;
 	border-bottom: 0.2rem solid $appGreen;
 	padding-bottom: 1rem;
 	transition: all 0.2s ease-in-out;
+	text-transform: uppercase;
 
 	&:hover {
 		color: $appGreen;

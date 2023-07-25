@@ -6,7 +6,7 @@ import { PROJECT_HEADING } from '../../utilities/appConstants';
 
 const Projects = () => {
 	return (
-		<section className='projects'>
+		<section className='projects add-section-padding'>
 			<h1>{PROJECT_HEADING}</h1>
 			{projects.map((project) => {
 				return <ProjectCard key={project.title} data={project} />;

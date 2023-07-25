@@ -20,6 +20,13 @@ $appWhite: #fff;
 	letter-spacing: -0.15rem;
 }
 
+@mixin fontL1 {
+	font-size: 6rem;
+	font-weight: 700;
+	line-height: 6rem;
+	letter-spacing: -0.15rem;
+}
+
 @mixin fontM {
 	font-size: 3.2rem;
 	font-weight: 700;
@@ -29,13 +36,13 @@ $appWhite: #fff;
 @mixin fontS {
 	font-size: 2.4rem;
 	font-weight: 700;
-	line-height: 2.5rem;
+	line-height: 2.9rem;
 }
 
 @mixin fontXS {
 	font-size: 1.8rem;
 	font-weight: 500;
-	line-height: 1.9rem;
+	line-height: 2.8rem;
 }
 
 //media queries breakpoints

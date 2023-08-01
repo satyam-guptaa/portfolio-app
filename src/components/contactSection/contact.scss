@@ -1,0 +1,63 @@
+@import '../../stylesheet/main.scss';
+
+.contact-wrapper {
+	background-color: $appGrey;
+	padding: 7rem;
+
+	.rings {
+		position: absolute;
+		bottom: 25rem;
+		left: -30rem;
+	}
+}
+
+.contact {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	&-text-section {
+		max-width: 44.5rem;
+		h1 {
+			@include fontL1;
+			margin-bottom: 3rem;
+		}
+		p {
+			@include fontXS;
+			color: $appGreyLG;
+		}
+	}
+
+	&-form {
+		max-width: 44.5rem;
+		> * {
+			margin-bottom: 3.2rem;
+		}
+		textarea {
+			width: 100%;
+			border-bottom: 0.1rem solid $appWhite;
+			transition: all 0.3s ease-in-out;
+			@include fontXS;
+
+			&:focus {
+				border-color: $appGreen;
+			}
+		}
+		text-align: end;
+	}
+
+	@include mobile {
+		flex-direction: column;
+		text-align: center;
+		> * {
+			margin-bottom: 5rem;
+			width: 100%;
+		}
+	}
+}
+
+.contact-divider {
+	border-bottom: 0.1rem solid $appWhite;
+	margin: 4.5rem 0;
+}

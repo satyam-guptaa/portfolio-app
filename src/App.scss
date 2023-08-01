@@ -4,6 +4,9 @@
 	max-width: 1280px;
 	position: relative;
 	margin: 0 auto;
+}
+
+.add-section-padding {
 	padding: 3rem 9rem;
 
 	@include mobile {

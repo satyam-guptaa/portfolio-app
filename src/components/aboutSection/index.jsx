@@ -9,21 +9,13 @@ import {
 	PORTFOLIO_TEXT,
 } from '../../utilities/appConstants';
 import Button from '../common/button/Button';
+import HeadFoot from '../common/headerFooter';
 
 const About = () => {
 	return (
-		<section className='about'>
+		<section className='about add-section-padding'>
 			<article className='about-head'>
-				<h3>{PORTFOLIO_TEXT}</h3>
-				<div className='about-head-links'>
-					<img src='/assets/images/icon-github.svg' alt='git' />
-					<img
-						src='/assets/images/icon-frontend-mentor.svg'
-						alt='FE'
-					/>
-					<img src='/assets/images/icon-linkedin.svg' alt='Lk' />
-					<img src='/assets/images/icon-twitter.svg' alt='tweeter' />
-				</div>
+				<HeadFoot />
 				<img
 					src='/assets/images/pattern-circle.svg'
 					alt='circle'
@@ -41,7 +33,7 @@ const About = () => {
 			</article>
 			<div className='about-profile-image-container'>
 				<img
-					src='/assets/images/image-profile-desktop.webp'
+					src='/assets/images/portfolio-img.png'
 					alt='profilemage'
 					className='profile-img'
 				/>

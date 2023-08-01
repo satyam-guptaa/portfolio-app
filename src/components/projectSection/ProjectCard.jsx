@@ -31,8 +31,18 @@ const ProjectCard = ({ data }) => {
 				/>
 				{imgLoaded && (
 					<div className='projects-resources-container'>
-						<Button text={VIEW_PROJECT_TEXT} />
-						<Button text={VIEW_CODE_TEXT} />
+						{data.projectLink && (
+							<>
+								<a href={data.projectLink} target='_blank'>
+									<Button text={VIEW_PROJECT_TEXT} />
+								</a>
+							</>
+						)}
+						{data.codeLink && (
+							<a href={data.codeLink} target='_blank'>
+								<Button text={VIEW_CODE_TEXT} />
+							</a>
+						)}
 					</div>
 				)}
 			</div>
@@ -46,8 +56,18 @@ const ProjectCard = ({ data }) => {
 			})}
 			{imgLoaded && (
 				<div className='projects-resources-container-small-devices'>
-					<Button text={VIEW_PROJECT_TEXT} />
-					<Button text={VIEW_CODE_TEXT} />
+					{data.projectLink && (
+						<>
+							<a href={data.projectLink} target='_blank'>
+								<Button text={VIEW_PROJECT_TEXT} />
+							</a>
+						</>
+					)}
+					{data.codeLink && (
+						<a href={data.codeLink} target='_blank'>
+							<Button text={VIEW_CODE_TEXT} />
+						</a>
+					)}
 				</div>
 			)}
 		</article>

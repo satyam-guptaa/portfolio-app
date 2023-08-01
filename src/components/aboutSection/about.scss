@@ -15,7 +15,12 @@
 			justify-content: flex-start;
 			height: 60rem;
 			gap: 2rem;
-			background-image: url('/assets/images/image-profile-mobile.webp');
+			background-image: url('/assets/images/portfolio-img-mob.png'),
+				linear-gradient(
+					to bottom,
+					rgba(36, 36, 36, 0),
+					rgba(36, 36, 36, 1)
+				);
 			background-position: center;
 			background-size: cover;
 		}

@@ -7,10 +7,15 @@ const HeadFoot = () => {
 		<div className='headFoot'>
 			<h3>{PORTFOLIO_TEXT}</h3>
 			<div className='links'>
-				<img src='/assets/images/icon-github.svg' alt='git' />
-				<img src='/assets/images/icon-frontend-mentor.svg' alt='FE' />
-				<img src='/assets/images/icon-linkedin.svg' alt='Lk' />
-				<img src='/assets/images/icon-twitter.svg' alt='tweeter' />
+				<a href='https://github.com/satyam-guptaa' target='_blank'>
+					<img src='/assets/images/icon-github.svg' alt='git' />
+				</a>
+				<a
+					href='https://linkedin.com/in/satyam-gupta1997'
+					target='_blank'
+				>
+					<img src='/assets/images/icon-linkedin.svg' alt='Lk' />
+				</a>
 			</div>
 		</div>
 	);

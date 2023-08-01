@@ -6,12 +6,21 @@ import {
 	GREETING,
 	FULL_NAME,
 	INTRO,
-	PORTFOLIO_TEXT,
 } from '../../utilities/appConstants';
 import Button from '../common/button/Button';
 import HeadFoot from '../common/headerFooter';
 
 const About = () => {
+	const handleContactMe = () => {
+		const contactMeForm = document.querySelector('.contact-wrapper');
+		if (contactMeForm) {
+			contactMeForm.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			});
+		}
+	};
+
 	return (
 		<section className='about add-section-padding'>
 			<article className='about-head'>
@@ -29,7 +38,7 @@ const About = () => {
 					</h1>
 				</div>
 				<p className='about-body-intro'>{INTRO}</p>
-				<Button text={CONTACT_ME_LINK} />
+				<Button text={CONTACT_ME_LINK} onChange={handleContactMe} />
 			</article>
 			<div className='about-profile-image-container'>
 				<img

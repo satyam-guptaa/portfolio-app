@@ -2,26 +2,34 @@ const projects = [
 	{
 		title: 'Entertainment Web App',
 		stack: ['HTML', 'CSS', 'JS'],
-		img: '/assets/images/thumbnail-project-1-large.webp',
+		img: '/assets/images/entertainment-app-img.jpg',
 		placeholderImg: '/assets/images/placeholder-1.png',
-	},
-	{
-		title: 'Portfolio',
-		stack: ['HTML', 'CSS', 'JS'],
-		img: '/assets/images/thumbnail-project-2-large.webp',
-		placeholderImg: '/assets/images/placeholder-1.png',
-	},
-	{
-		title: 'TODO App',
-		stack: ['HTML', 'CSS', 'JS'],
-		img: '/assets/images/thumbnail-project-3-large.webp',
-		placeholderImg: '/assets/images/placeholder-1.png',
+		projectLink: 'https://enter10ment-bysatyam.netlify.app/',
+		codeLink: 'https://github.com/satyam-guptaa/cyperTub',
 	},
 	{
 		title: 'Dictionary App',
 		stack: ['HTML', 'CSS', 'JS'],
-		img: '/assets/images/thumbnail-project-4-large.webp',
+		img: '/assets/images/dictionary-app-img.png',
 		placeholderImg: '/assets/images/placeholder-1.png',
+		projectLink: 'https://my-dictionary-bysatyam.netlify.app/',
+		codeLink: 'https://github.com/satyam-guptaa/my-dictionary-app',
+	},
+	{
+		title: 'Age Calculator',
+		stack: ['HTML', 'CSS', 'JS'],
+		img: '/assets/images/age-calc-app-img.jpg',
+		placeholderImg: '/assets/images/placeholder-1.png',
+		projectLink: 'https://age-calculator-bysatyam.netlify.app/',
+		codeLink: 'https://github.com/satyam-guptaa/my-age-calculator',
+	},
+	{
+		title: 'Portfolio',
+		stack: ['HTML', 'CSS', 'JS'],
+		img: '/assets/images/portfolio-app-img.png',
+		placeholderImg: '/assets/images/placeholder-1.png',
+		projectLink: 'https://satyamgupta-portfolio.netlify.app/',
+		codeLink: 'https://github.com/satyam-guptaa/portfolio-app',
 	},
 ];
 

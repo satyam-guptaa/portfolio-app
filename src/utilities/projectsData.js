@@ -28,7 +28,6 @@ const projects = [
 		stack: ['REACT', 'SASS', 'JS'],
 		img: '/assets/images/portfolio-app-img.jpg',
 		placeholderImg: '/assets/images/placeholder-1.png',
-		projectLink: 'https://satyamgupta-portfolio.netlify.app/',
 		codeLink: 'https://github.com/satyam-guptaa/portfolio-app',
 	},
 ];

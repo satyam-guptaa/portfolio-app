@@ -33,7 +33,7 @@ const About = () => {
 			</article>
 			<div className='about-profile-image-container'>
 				<img
-					src='/assets/images/image-profile-desktop.webp'
+					src='/assets/images/portfolio-img.png'
 					alt='profilemage'
 					className='profile-img'
 				/>

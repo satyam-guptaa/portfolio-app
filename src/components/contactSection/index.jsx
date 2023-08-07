@@ -58,6 +58,8 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		validation();
+		console.log('clicked');
+		console.log(error);
 	};
 
 	return (

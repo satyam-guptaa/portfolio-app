@@ -8,6 +8,11 @@
 		position: absolute;
 		bottom: 25rem;
 		left: -30rem;
+
+		@include mobile {
+			bottom: 22rem;
+			left: -50rem;
+		}
 	}
 }
 

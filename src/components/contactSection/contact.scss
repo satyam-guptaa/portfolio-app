@@ -8,6 +8,11 @@
 		position: absolute;
 		bottom: 25rem;
 		left: -30rem;
+
+		@include mobile {
+			bottom: 22rem;
+			left: -50rem;
+		}
 	}
 }
 
@@ -31,8 +36,12 @@
 
 	&-form {
 		max-width: 44.5rem;
-		> * {
-			margin-bottom: 3.2rem;
+		@include mobile {
+			height: auto;
+		}
+		.form-submit-loader {
+			height: 3.6rem;
+			width: 5rem;
 		}
 		textarea {
 			width: 100%;
@@ -45,6 +54,30 @@
 			}
 		}
 		text-align: end;
+	}
+
+	&-form-response {
+		width: 44.5rem;
+		height: 35rem;
+		text-align: center;
+
+		h1 {
+			@include fontM;
+			margin-bottom: 2rem;
+		}
+		p {
+			@include fontXS;
+			color: $appGreyLG;
+		}
+		button {
+			position: relative;
+			margin: 3rem 0;
+			z-index: 1;
+		}
+
+		@include mobile {
+			height: auto;
+		}
 	}
 
 	@include mobile {

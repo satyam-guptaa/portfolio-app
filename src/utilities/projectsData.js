@@ -18,7 +18,7 @@ const projects = [
 	{
 		title: 'Age Calculator',
 		stack: ['REACT', 'SASS', 'JS'],
-		img: '/assets/images/age-calc-app-img.jpg',
+		img: '/assets/images/age-calc-app-img.png',
 		placeholderImg: '/assets/images/placeholder-1.png',
 		projectLink: 'https://age-calculator-bysatyam.netlify.app/',
 		codeLink: 'https://github.com/satyam-guptaa/my-age-calculator',
@@ -26,9 +26,8 @@ const projects = [
 	{
 		title: 'Portfolio',
 		stack: ['REACT', 'SASS', 'JS'],
-		img: '/assets/images/portfolio-app-img.png',
+		img: '/assets/images/portfolio-app-img.jpg',
 		placeholderImg: '/assets/images/placeholder-1.png',
-		projectLink: 'https://satyamgupta-portfolio.netlify.app/',
 		codeLink: 'https://github.com/satyam-guptaa/portfolio-app',
 	},
 ];

@@ -38,7 +38,7 @@ const About = () => {
 					</h1>
 				</div>
 				<p className='about-body-intro'>{INTRO}</p>
-				<Button text={CONTACT_ME_LINK} onChange={handleContactMe} />
+				<Button text={CONTACT_ME_LINK} onClick={handleContactMe} />
 			</article>
 			<div className='about-profile-image-container'>
 				<img

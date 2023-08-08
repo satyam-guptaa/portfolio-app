@@ -27,7 +27,7 @@ const Contact = () => {
 		email: '',
 		message: '',
 	});
-	const [messageReceived, setMessageReceived] = useState(true);
+	const [messageReceived, setMessageReceived] = useState(false);
 	const [loader, setLoader] = useState(false);
 	const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 	const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;

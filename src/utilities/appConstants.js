@@ -20,3 +20,6 @@ export const NAME_TYPE = 'name';
 export const MESSAGE_TYPE = 'message';
 export const INVALID_FORMAT_TEXT = 'Sorry, invalid format here';
 export const CANNOT_EMPTY_TEXT = 'Cannot be empty!';
+export const RESPONSE_HEADING = 'Thanks you!';
+export const RESPONSE_MESSAGE1 = 'Message received!';
+export const RESPONSE_MESSAGE2 = 'Will reach out to you soon.';

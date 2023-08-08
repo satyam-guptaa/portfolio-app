@@ -9,6 +9,9 @@ import {
 	MESSAGE_TYPE,
 	NAME_PLACEHOLDER,
 	NAME_TYPE,
+	RESPONSE_HEADING,
+	RESPONSE_MESSAGE1,
+	RESPONSE_MESSAGE2,
 	SEND_MESSAGE_BUTTON,
 } from '../../utilities/appConstants';
 import Input from '../common/inputs/Input';
@@ -24,7 +27,7 @@ const Contact = () => {
 		email: '',
 		message: '',
 	});
-	const [messageReceived, setMessageReceived] = useState(false);
+	const [messageReceived, setMessageReceived] = useState(true);
 	const [loader, setLoader] = useState(false);
 	const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 	const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -132,9 +135,9 @@ const Contact = () => {
 								src='/assets/images/green-tick.png'
 								alt='tick'
 							/>
-							<h1>Thanks you!</h1>
-							<p>Message received!</p>
-							<p>Will reach out to you soon.</p>
+							<h1>{RESPONSE_HEADING}</h1>
+							<p>{RESPONSE_MESSAGE1}</p>
+							<p>{RESPONSE_MESSAGE2}</p>
 							<Button
 								text='Send New Message'
 								onClick={handleSendNewMessage}

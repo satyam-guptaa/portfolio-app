@@ -1,13 +1,22 @@
 import React from 'react';
 import './input.scss';
 
-const Input = ({ placeholder, onChange, type, value, wrapperClass, error }) => {
+const Input = ({
+	name,
+	placeholder,
+	onChange,
+	type,
+	value,
+	wrapperClass,
+	error,
+}) => {
 	return (
 		<>
 			<input
 				className={`commonInput ${wrapperClass} ${
 					error.length > 0 ? 'input-error' : ''
 				}`}
+				name={name}
 				type={type}
 				placeholder={placeholder}
 				onChange={onChange}

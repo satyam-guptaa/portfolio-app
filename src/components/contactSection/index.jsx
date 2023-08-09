@@ -28,6 +28,7 @@ const Contact = () => {
 		message: '',
 	});
 	const [messageReceived, setMessageReceived] = useState(false);
+	const [errorInEmail, setErrorInEmail] = useState(false);
 	const [loader, setLoader] = useState(false);
 	const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 	const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -70,10 +71,12 @@ const Contact = () => {
 					.sendForm(serviceId, templateId, e.target, publicKey)
 					.then((result) => {
 						setLoader(false);
+						setErrorInEmail(false);
 						if (result.status === 200) setMessageReceived(true);
 					})
 					.catch((error) => {
 						setLoader(false);
+						setErrorInEmail(true);
 						console.log(error.text);
 					});
 			})
@@ -126,6 +129,13 @@ const Contact = () => {
 								alt='loader'
 							/>
 						)}
+						<p className='server-error-msg'>
+							{`${
+								errorInEmail
+									? 'Unexpected error occcured, please try again later!'
+									: ''
+							}`}
+						</p>
 					</form>
 				)}
 				{messageReceived && (

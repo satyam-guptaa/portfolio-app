@@ -125,6 +125,10 @@
 		background-position: center;
 		background-size: cover;
 
+		@include mobile {
+			display: none;
+		}
+
 		&::before {
 			content: '';
 			position: absolute;

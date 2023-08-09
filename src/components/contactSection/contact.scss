@@ -35,6 +35,7 @@
 	}
 
 	&-form {
+		text-align: end;
 		max-width: 44.5rem;
 		@include mobile {
 			height: auto;
@@ -53,7 +54,12 @@
 				border-color: $appGreen;
 			}
 		}
-		text-align: end;
+		.server-error-msg {
+			height: 1.4rem;
+			font-size: 1.4rem;
+			color: $appRed;
+			margin: 1rem 0;
+		}
 	}
 
 	&-form-response {

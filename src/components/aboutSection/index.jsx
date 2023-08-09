@@ -9,6 +9,7 @@ import {
 } from '../../utilities/appConstants';
 import Button from '../common/button/Button';
 import HeadFoot from '../common/headerFooter';
+import Competencies from './Competencies';
 
 const About = () => {
 	const [imgLoaded, setImgLoaded] = useState(false);
@@ -66,6 +67,7 @@ const About = () => {
 			</div>
 			<div className='about-divider'></div>
 			<Skills />
+			<Competencies />
 			<div className='about-bottom-ring-img-container'>
 				<img src='/assets/images/pattern-rings.svg' alt='rings' />
 			</div>

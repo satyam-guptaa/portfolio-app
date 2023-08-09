@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Skills from './Skills';
 import './about.scss';
 import {
@@ -11,6 +11,9 @@ import Button from '../common/button/Button';
 import HeadFoot from '../common/headerFooter';
 
 const About = () => {
+	const [imgLoaded, setImgLoaded] = useState(false);
+	console.log(imgLoaded);
+
 	const handleContactMe = () => {
 		const contactMeForm = document.querySelector('.contact-wrapper');
 		if (contactMeForm) {
@@ -40,12 +43,18 @@ const About = () => {
 				<p className='about-body-intro'>{INTRO}</p>
 				<Button text={CONTACT_ME_LINK} onClick={handleContactMe} />
 			</article>
-			<div className='about-profile-image-container'>
+			<div
+				className={`about-profile-image-container ${
+					!imgLoaded ? 'about-placeholder-img' : ''
+				}`}
+			>
 				<img
 					src='/assets/images/portfolio-img.png'
 					alt='profilemage'
 					className='profile-img'
+					onLoad={() => setImgLoaded(true)}
 				/>
+
 				<img
 					src='/assets/images/pattern-circle.svg'
 					alt='circle'
